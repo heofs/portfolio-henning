@@ -1,0 +1,13 @@
+@import './normalize.css';
+@import '~antd/dist/antd.css';
+
+body {
+  text-align: center;
+  background-color: #303030;
+}
+
+body,
+h1,
+h2 {
+  color: #dedede;
+}
