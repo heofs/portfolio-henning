@@ -11,7 +11,7 @@ const Avatar = () => {
   return (
     <StyledAvatar
       size={128}
-      src="https://storage.cloud.google.com/ofstad-io-bucket/11583422.jpeg"
+      src="https://storage.googleapis.com/ofstad-io-bucket/11583422.jpeg"
     />
   )
 }
