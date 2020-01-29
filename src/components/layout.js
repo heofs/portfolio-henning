@@ -10,7 +10,7 @@ import 'styles/index.css'
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 60;
+  max-width: 50em;
   padding: 0 1.0875rem 1.45rem;
 `
 const Main = styled.main``
