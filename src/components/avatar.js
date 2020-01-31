@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Avatar as AntAvatar } from 'antd'
 
 const StyledAvatar = styled(AntAvatar)`
-  margin: 1em 0;
+  margin: 2em 0;
 `
 
 const Avatar = () => {

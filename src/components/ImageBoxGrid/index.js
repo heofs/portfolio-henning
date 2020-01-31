@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 import { Row as AntRow, Col } from 'antd'
 
-import IconJs from 'src/images/icon-js.svg'
+import IconJs from 'src/images/icon-js-2.svg'
 import IconReact from 'src/images/icon-react.svg'
 import NodeIcon from 'src/images/icon-node-2.svg'
 import GraphqlIcon from 'src/images/icon-graphql.svg'
 import CloudIcon from 'src/images/icon-cloud.svg'
+import DatabaseIcon from 'src/images/icon-database.svg'
 
 const StyledCol = styled(Col)`
   display: flex;
@@ -23,7 +24,7 @@ const StyledCol = styled(Col)`
 
 const Box = ({ span, children, image: Image, ...otherProps }) => {
   return (
-    <StyledCol span={span} size={2.8} {...otherProps}>
+    <StyledCol span={span} size={5} {...otherProps}>
       <Image />
       {children}
     </StyledCol>
@@ -32,6 +33,7 @@ const Box = ({ span, children, image: Image, ...otherProps }) => {
 
 Box.propTypes = {
   span: PropTypes.number,
+  children: PropTypes.array,
 }
 
 const Row = styled(AntRow)`
@@ -39,53 +41,61 @@ const Row = styled(AntRow)`
 `
 
 const Title = styled.h2`
-  font-size: 1.6em;
+  font-size: 2em;
   margin: 0.1em;
 `
 
 const Text = styled.p`
-  font-size: 1em;
+  font-size: 1.4em;
   margin: 0;
 `
 
-const ImageBoxGrid = (props) => {
+const Wrapper = styled.div`
+  margin: 1em 0;
+`
+
+const colSettings = {
+  xs: { span: 24, offset: 0 },
+  sm: { span: 12, offset: 0 },
+  md: { span: 8, offset: 0 },
+}
+
+const ImageBoxGrid = () => {
   return (
-    <div>
-      <Row type="flex" justify="space-around">
-        <Box span={8} image={IconJs}>
+    <Wrapper>
+      <Row type="flex" justify="space-around" gutter={[24, 24]}>
+        <Box {...colSettings} image={IconJs}>
           <Title>JavaScript</Title>
           <Text>Building applications with JavaScript ES6.</Text>
         </Box>
-        <Box span={8} image={NodeIcon}>
+        <Box {...colSettings} image={NodeIcon}>
           <Title>Node.js</Title>
           <Text>Creating backend web services in Node.js.</Text>
         </Box>
-        <Box span={8} image={IconReact}>
+        <Box {...colSettings} image={IconReact}>
           <Title>React</Title>
           <Text>
             Experience in building blazing fast commercial applications using
             React.js.
           </Text>
         </Box>
-      </Row>
-      <Row type="flex" justify="space-around">
-        <Col span={4} />
-        <Box span={8} image={GraphqlIcon}>
+        <Box {...colSettings} image={DatabaseIcon}>
+          <Title>Databases</Title>
+          <Text>Utilising both SQL and No-SQL database solutions.</Text>
+        </Box>
+        <Box {...colSettings} image={GraphqlIcon}>
           <Title>GraphQL</Title>
           <Text>Building and designing applications that use GraphQL.</Text>
         </Box>
-        <Box span={8} image={CloudIcon}>
+        <Box {...colSettings} image={CloudIcon}>
           <Title>Cloud</Title>
           <Text>
             Using services like GCP and AWS to build cloud infrastructure.
           </Text>
         </Box>
-        <Col span={4} />
       </Row>
-    </div>
+    </Wrapper>
   )
 }
-
-ImageBoxGrid.propTypes = {}
 
 export default ImageBoxGrid

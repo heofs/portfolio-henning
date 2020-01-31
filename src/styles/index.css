@@ -11,3 +11,20 @@ h1,
 h2 {
   color: #dedede;
 }
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+body {
+  background-image: url('./floor.svg');
+  background-repeat: repeat;
+}

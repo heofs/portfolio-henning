@@ -2,11 +2,12 @@ import React from 'react'
 
 const Header = () => (
   <header>
-    <div>
-      <h1>Henning Ofstad</h1>
-      <h2>Full stack software engineer</h2>
-      <p>I am a full stack web developer from Norway.</p>
-    </div>
+    <h1>Henning Ofstad</h1>
+    <h2>Software Engineer</h2>
+    <p>
+      Welcome to my website! My name is Henning, and I am a full stack software
+      developer from Norway. My job is building great software applications.
+    </p>
   </header>
 )
 
