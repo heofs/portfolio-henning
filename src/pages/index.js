@@ -12,7 +12,6 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Avatar />
     <Header />
-    <p>Welcome to my website.</p>
     <ImageBoxGrid />
   </Layout>
 )

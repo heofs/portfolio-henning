@@ -66,11 +66,16 @@ const ImageBoxGrid = () => {
       <Row type="flex" justify="space-around" gutter={[24, 24]}>
         <Box {...colSettings} image={IconJs}>
           <Title>JavaScript</Title>
-          <Text>Building applications with JavaScript ES6.</Text>
+          <Text>
+            Using the latest features of ES6 to build applications on both
+            frontend and backend.
+          </Text>
         </Box>
         <Box {...colSettings} image={NodeIcon}>
           <Title>Node.js</Title>
-          <Text>Creating backend web services in Node.js.</Text>
+          <Text>
+            Powerful backend services using Chrome's V8 JavaScript engine.
+          </Text>
         </Box>
         <Box {...colSettings} image={IconReact}>
           <Title>React</Title>
@@ -81,16 +86,22 @@ const ImageBoxGrid = () => {
         </Box>
         <Box {...colSettings} image={DatabaseIcon}>
           <Title>Databases</Title>
-          <Text>Utilising both SQL and No-SQL database solutions.</Text>
+          <Text>
+            Utilising both SQL and No-SQL database solutions to handle
+            application data.
+          </Text>
         </Box>
         <Box {...colSettings} image={GraphqlIcon}>
           <Title>GraphQL</Title>
-          <Text>Building and designing applications that use GraphQL.</Text>
+          <Text>
+            Creating awesome APIs using GraphQL as a communication layer.
+          </Text>
         </Box>
         <Box {...colSettings} image={CloudIcon}>
           <Title>Cloud</Title>
           <Text>
-            Using services like GCP and AWS to build cloud infrastructure.
+            Using highly scaleable and secure services like GCP and AWS to build
+            application infrastructure.
           </Text>
         </Box>
       </Row>

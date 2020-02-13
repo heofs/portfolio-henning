@@ -5,8 +5,8 @@ const Header = () => (
     <h1>Henning Ofstad</h1>
     <h2>Software Engineer</h2>
     <p>
-      Welcome to my website! My name is Henning, and I am a full stack software
-      developer from Norway. My job is building great software applications.
+      My name is Henning, I am a full stack software developer from Norway. I
+      build awesome applications using the latest technologies.
     </p>
   </header>
 )

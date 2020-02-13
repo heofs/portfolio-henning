@@ -8,6 +8,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-antd',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +19,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,12 +29,6 @@ module.exports = {
         theme_color: `#303030`,
         display: `minimal-ui`,
         icon: `src/images/favicon-js.svg`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
       },
     },
     {
