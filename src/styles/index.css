@@ -3,7 +3,7 @@
 
 body {
   text-align: center;
-  background-color: #303030;
+  /* background-color: #dde8fa; */
 }
 
 body,
@@ -23,8 +23,14 @@ h2 {
 p {
   font-size: 1.2em;
 }
-
+/* 
 body {
   background-image: url('./floor.svg');
   background-repeat: repeat;
+} */
+body div:nth-child(even):not(:first-child) {
+  background: rgb(246, 246, 246);
 }
+/* body div:nth-child(odd):not(:first-child) {
+  background: red;
+} */
