@@ -28,9 +28,9 @@ body {
   background-image: url('./floor.svg');
   background-repeat: repeat;
 } */
-body div:nth-child(even):not(:first-child) {
+/* body div:nth-child(even):not(:first-child) {
   background: rgb(246, 246, 246);
-}
+} */
 /* body div:nth-child(odd):not(:first-child) {
   background: red;
 } */

@@ -11,17 +11,28 @@ const Wrapper = styled(Row)`
   width: 100%;
   height: ${headerHeight};
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* display: flex;
   flex-direction: column; */
 `
 
+const StyledCol = styled.div`
+  /* background-color: blue; */
+  z-index: 2;
+  h1 {
+  }
+`
+
 const Header = () => (
   <Wrapper align="middle">
-    <Col>
-      <Particles height={headerHeight} />
+    <Particles height={headerHeight} />
+    <StyledCol>
       <Avatar />
       <h1>Henning Ofstad</h1>
-    </Col>
+      <p>Engineer</p>
+    </StyledCol>
   </Wrapper>
 )
 

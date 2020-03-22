@@ -62,7 +62,7 @@ const Wrapper = styled(Particles)`
   position: absolute;
   width: 100%;
   background-color: rgb(49, 49, 49);
-  z-index: -1;
+  z-index: 1;
 `
 
 const Component = ({ height }) => (
