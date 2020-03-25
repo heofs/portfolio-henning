@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Particles from './particles'
 import Avatar from 'components/avatar'
-import { Row, Col } from 'antd'
+import { Row } from 'antd'
 
 const headerHeight = '20rem'
 
@@ -18,21 +18,22 @@ const Wrapper = styled(Row)`
   flex-direction: column; */
 `
 
-const StyledCol = styled.div`
-  /* background-color: blue; */
+const Column = styled.div`
   z-index: 2;
-  h1 {
+  h1,
+  p {
+    color: #dedede;
   }
 `
 
 const Header = () => (
   <Wrapper align="middle">
     <Particles height={headerHeight} />
-    <StyledCol>
+    <Column>
       <Avatar />
       <h1>Henning Ofstad</h1>
       <p>Engineer</p>
-    </StyledCol>
+    </Column>
   </Wrapper>
 )
 

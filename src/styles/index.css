@@ -6,10 +6,11 @@ body {
   /* background-color: #dde8fa; */
 }
 
-body,
 h1,
-h2 {
-  color: #dedede;
+h2,
+h3,
+p {
+  color: #212529;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h2 {
 p {
   font-size: 1.2em;
 }
+
 /* 
 body {
   background-image: url('./floor.svg');
