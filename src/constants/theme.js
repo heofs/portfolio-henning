@@ -26,3 +26,7 @@ export const breakpoints = {
   xl: '1200px',
   xxl: '1600px',
 }
+
+export const sizes = {
+  cardImageSize: '4em',
+}

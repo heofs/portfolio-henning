@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Particles from './particles'
 import Avatar from 'components/avatar'
 import { Row } from 'antd'
+import { colors } from 'constants/theme'
 
 const headerHeight = '20rem'
 
@@ -22,7 +23,7 @@ const Column = styled.div`
   z-index: 2;
   h1,
   p {
-    color: #dedede;
+    color: ${colors.offWhite};
   }
 `
 

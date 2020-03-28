@@ -9,6 +9,8 @@ import Card from 'components/card'
 
 import { colors, breakpoints } from 'constants/theme'
 
+import IconJS from 'images/icon-js-2.svg'
+
 const IntroText = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,35 +49,44 @@ const IndexPage = () => (
     <Content>
       <Divider>Software Skills</Divider>
       <PageRow gutter={gutter}>
-        <Card>
+        <Card image={IconJS}>
           <h2>Frontend</h2>
-          <p>Creating intuitive user interfaces using React.</p>
-        </Card>
-        <Card>
-          <h2>Backend</h2>
           <p>
-            Building reliable backend services using JavaScript Node.js and
-            Python.
+            Experience in building blazing fast commercial applications using
+            React.js.
           </p>
         </Card>
-        <Card>
+        <Card image={IconJS}>
+          <h2>Backend</h2>
+          <p>Building backend services using Node.js and Python.</p>
+        </Card>
+        <Card image={IconJS}>
           <h2>Cloud</h2>
-          <p>Electronics projects..</p>
+          <p>
+            Proficiency in using cloud providers like GCP and AWS to build
+            highly scalable and secure services.
+          </p>
         </Card>
       </PageRow>
       <Divider>Contributions</Divider>
       <PageRow gutter={gutter}>
-        <Card>
+        <Card image={IconJS}>
           <h2>Weight Boss</h2>
-          <p>Electronics projects..</p>
+          <p>
+            Web application for logging your body weight. Built with React and
+            serverless functions.
+          </p>
         </Card>
-        <Card>
+        <Card image={IconJS}>
           <h2>Author</h2>
-          <p>Electronics projects..</p>
+          <p>
+            Web application used by Office for National Statistics in the UK for
+            building questionnaires.
+          </p>
         </Card>
-        <Card>
+        <Card image={IconJS}>
           <h2>Blog</h2>
-          <p>Electronics projects..</p>
+          <p>My personal blog with engineering projects.. Work in progress.</p>
         </Card>
       </PageRow>
     </Content>
