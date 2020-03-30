@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Particles from 'react-particles-js'
 import styled from 'styled-components'
+import { colors } from 'constants/theme'
 
 const particlesConfig = {
   particles: {
@@ -13,7 +14,7 @@ const particlesConfig = {
       },
     },
     color: {
-      value: '#3CA9D1',
+      value: colors.primary,
     },
     shape: {
       type: 'circle',
@@ -61,7 +62,7 @@ const Wrapper = styled(Particles)`
   top: 0px;
   position: absolute;
   width: 100%;
-  background-color: rgb(49, 49, 49);
+  background-color: ${colors.headerBackground};
   z-index: 1;
 `
 

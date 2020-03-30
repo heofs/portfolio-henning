@@ -10,6 +10,12 @@ import Card from 'components/card'
 import { colors, breakpoints } from 'constants/theme'
 
 import IconJS from 'images/icon-js-2.svg'
+import IconAuthor from 'images/author-logo.svg'
+import IconConsole from 'images/console.svg'
+import IconCloud from 'images/cloud-console.svg'
+import IconWeb from 'images/front-end.svg'
+import IconWeight from 'images/weight.svg'
+import IconPages from 'images/blog-pages.svg'
 
 const IntroText = styled.div`
   display: flex;
@@ -49,18 +55,18 @@ const IndexPage = () => (
     <Content>
       <Divider>Software Skills</Divider>
       <PageRow gutter={gutter}>
-        <Card image={IconJS}>
+        <Card image={IconWeb}>
           <h2>Frontend</h2>
           <p>
             Experience in building blazing fast commercial applications using
             React.js.
           </p>
         </Card>
-        <Card image={IconJS}>
+        <Card image={IconConsole}>
           <h2>Backend</h2>
           <p>Building backend services using Node.js and Python.</p>
         </Card>
-        <Card image={IconJS}>
+        <Card image={IconCloud}>
           <h2>Cloud</h2>
           <p>
             Proficiency in using cloud providers like GCP and AWS to build
@@ -70,21 +76,21 @@ const IndexPage = () => (
       </PageRow>
       <Divider>Contributions</Divider>
       <PageRow gutter={gutter}>
-        <Card image={IconJS}>
+        <Card image={IconWeight}>
           <h2>Weight Boss</h2>
           <p>
             Web application for logging your body weight. Built with React and
             serverless functions.
           </p>
         </Card>
-        <Card image={IconJS}>
+        <Card image={IconAuthor}>
           <h2>Author</h2>
           <p>
             Web application used by Office for National Statistics in the UK for
             building questionnaires.
           </p>
         </Card>
-        <Card image={IconJS}>
+        <Card image={IconPages}>
           <h2>Blog</h2>
           <p>My personal blog with engineering projects.. Work in progress.</p>
         </Card>

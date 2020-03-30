@@ -1,0 +1,28 @@
+<!-- Icon made by Josefine Adolfsen -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 182.86">
+    <rect width="256" height="182.86" rx="15.31" fill="#736e6e"/>
+    <path d="M15.62,0H240.38A15.62,15.62,0,0,1,256,15.62v25a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v-25A15.62,15.62,0,0,1,15.62,0Z" fill="#698ed5"/>
+    <circle cx="26.33" cy="21.58" r="6.58" fill="#dd636e"/>
+    <circle cx="46.08" cy="21.58" r="6.58" fill="#ffe07d"/>
+    <circle cx="65.83" cy="21.58" r="6.58" fill="#86f1a7"/>
+    <rect x="16.95" y="57.42" width="58.26" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="85.73" y="57.42" width="18.61" height="7.28" rx="3.64" fill="#ddeafb"/>
+    <rect x="114.86" y="57.42" width="33.98" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="16.95" y="76.03" width="30.75" height="7.28" rx="3.64" fill="#ddeafb"/>
+    <rect x="58.22" y="76.03" width="30.75" height="7.28" rx="3.64" fill="#bed8fb"/>
+    <rect x="99.49" y="76.03" width="62.31" height="7.28" rx="3.64" fill="#ffe07d"/>
+    <rect x="173.12" y="76.03" width="40.46" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="44.46" y="94.64" width="58.26" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="113.24" y="94.64" width="18.61" height="7.28" rx="3.64" fill="#ddeafb"/>
+    <rect x="142.37" y="94.64" width="33.98" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="44.46" y="113.25" width="30.75" height="7.28" rx="3.64" fill="#bed8fb"/>
+    <rect x="84.92" y="113.25" width="50.17" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="143.18" y="113.25" width="50.17" height="7.28" rx="3.64" fill="#ddeafb"/>
+    <rect x="16.82" y="131.86" width="16.18" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="42.72" y="131.86" width="62.31" height="7.28" rx="3.64" fill="#ddeafb"/>
+    <rect x="113.92" y="131.86" width="33.98" height="7.28" rx="3.64" fill="#fb74c4"/>
+    <rect x="16.82" y="149.66" width="30.75" height="7.28" rx="3.64" fill="#ddeafb"/>
+    <rect x="56.47" y="149.66" width="30.75" height="7.28" rx="3.64" fill="#bed8fb"/>
+    <rect x="98.55" y="149.66" width="62.31" height="7.28" rx="3.64" fill="#ffe07d"/>
+    <rect x="168.95" y="149.66" width="20.23" height="7.28" rx="3.64" fill="#fb74c4"/>
+</svg>

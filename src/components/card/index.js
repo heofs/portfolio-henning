@@ -8,7 +8,7 @@ import { colors, sizes } from 'constants/theme'
 const StyledCard = styled(AntCard)`
   border: none;
   .ant-card-body {
-    background: ${colors.secondary};
+    /* background: ${colors.secondary}; */
     border: thin solid ${colors.borderColor};
     height: 100%;
     border-radius: 10px;

@@ -1,5 +1,5 @@
 export const colors = {
-  lightGrey: '#ebebeb',
+  lightGrey: 'rgb(245, 245, 245)',
   darkGrey: 'rgba(0, 0, 0, 0.15)',
   offWhite: '#dedede',
   particleBlue: '#3CA9D1',
@@ -9,6 +9,8 @@ export const colors = {
 colors.primary = colors.particleBlue
 colors.secondary = colors.lightGrey
 colors.borderColor = colors.darkGrey
+colors.headerBackground = colors.dark
+colors.headerText = colors.offWhite
 // colors.primary = colors.turquoise;
 // colors.darkPrimary = colors.darkTurquoise;
 // colors.secondary = colors.grey;
@@ -29,4 +31,5 @@ export const breakpoints = {
 
 export const sizes = {
   cardImageSize: '4em',
+  headerHeight: '20rem',
 }
