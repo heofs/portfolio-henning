@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Particles from 'react-particles-js'
 import styled from 'styled-components'
-import { colors } from 'constants/theme'
+import { colors, sizes } from 'constants/theme'
 
 const particlesConfig = {
   particles: {
@@ -64,6 +64,7 @@ const Wrapper = styled(Particles)`
   width: 100%;
   background-color: ${colors.headerBackground};
   z-index: 1;
+  height: ${sizes.headerHeight};
 `
 
 const Component = ({ height }) => (
