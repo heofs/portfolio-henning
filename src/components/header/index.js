@@ -12,9 +12,6 @@ const Wrapper = styled(Row)`
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* display: flex;
-  flex-direction: column; */
 `
 
 const Column = styled.div`
@@ -31,7 +28,7 @@ const Header = () => (
     <Column>
       <Avatar />
       <h1>Henning Ofstad</h1>
-      <p>Engineer</p>
+      <p>Software Engineer</p>
     </Column>
   </Wrapper>
 )

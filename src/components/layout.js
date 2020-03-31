@@ -16,6 +16,7 @@ const Main = styled.main``
 const Footer = styled.footer`
   color: black;
   margin: 1em;
+  padding-bottom: 1em;
 `
 
 const Layout = ({ children }) => {
