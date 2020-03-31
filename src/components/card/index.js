@@ -8,7 +8,6 @@ import { colors, sizes } from 'constants/theme'
 const StyledCard = styled(AntCard)`
   border: none;
   .ant-card-body {
-    /* background: ${colors.secondary}; */
     border: thin solid ${colors.borderColor};
     height: 100%;
     border-radius: 10px;
@@ -16,11 +15,12 @@ const StyledCard = styled(AntCard)`
       width: ${sizes.cardImageSize};
       height: ${sizes.cardImageSize};
     }
+
+    -webkit-box-shadow: 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
   }
   height: 100%;
-
-  /* margin: 0 1em; */
-  /* margin: 2em; */
 `
 
 const StyledCol = styled(Col)``

@@ -9,7 +9,6 @@ import Card from 'components/card'
 
 import { colors, breakpoints } from 'constants/theme'
 
-import IconJS from 'images/icon-js-2.svg'
 import IconAuthor from 'images/author-logo.svg'
 import IconConsole from 'images/console.svg'
 import IconCloud from 'images/cloud-console.svg'
@@ -21,8 +20,14 @@ const IntroText = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${colors.secondary};
-  padding-top: 1em;
   border-bottom: thin solid ${colors.borderColor};
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 5px -6px #222;
+  padding: 1em;
+  p {
+    margin: 0;
+  }
 `
 
 const PageRow = styled(Row)``
@@ -46,7 +51,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Header />
     <IntroText>
-      <h2>About me</h2>
+      {/* <h2>About me</h2> */}
       <p>
         My name is Henning, I am a software engineer from Norway. I build
         software services and other engineering projects.
@@ -82,6 +87,13 @@ const IndexPage = () => (
             Web application for logging your body weight. Built with React and
             serverless functions.
           </p>
+          <a href="https://weight.ofstad.io/" target="_blank">
+            Live
+          </a>
+          {' | '}
+          <a href="https://github.com/heofs/weight-boss" target="_blank">
+            GitHub
+          </a>
         </Card>
         <Card image={IconAuthor}>
           <h2>Author</h2>
@@ -89,6 +101,9 @@ const IndexPage = () => (
             Web application used by Office for National Statistics in the UK for
             building questionnaires.
           </p>
+          <a href="https://github.com/ONSdigital/eq-author-app" target="_blank">
+            GitHub
+          </a>
         </Card>
         <Card image={IconPages}>
           <h2>Blog</h2>
