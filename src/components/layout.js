@@ -7,16 +7,23 @@ import 'styles/index.css'
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 55em;
-  padding: 0 1.0875rem 1.45rem;
+  /* max-width: 55em; */
+  /* padding: 0 1.0875rem 1.45rem; */
+  padding: 0;
 `
 const Main = styled.main``
+
+const Footer = styled.footer`
+  color: black;
+  margin: 1em;
+  padding-bottom: 1em;
+`
 
 const Layout = ({ children }) => {
   return (
     <Wrapper>
       <Main>{children}</Main>
-      <footer>© {new Date().getFullYear()}, Built by H. Ofstad</footer>
+      <Footer>© {new Date().getFullYear()}, Built by H. Ofstad</Footer>
     </Wrapper>
   )
 }

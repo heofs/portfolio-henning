@@ -34,11 +34,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
+        components: path.join(__dirname, 'src/components'),
+        constants: path.join(__dirname, 'src/constants'),
         src: path.join(__dirname, 'src'),
         pages: path.join(__dirname, 'src/pages'),
         styles: path.join(__dirname, 'src/styles'),
         images: path.join(__dirname, 'src/images'),
-        components: path.join(__dirname, 'src/components'),
       },
     },
     {
@@ -49,6 +50,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
