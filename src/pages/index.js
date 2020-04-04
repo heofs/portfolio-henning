@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import { Row, Divider } from 'antd'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
 import Header from 'components/header'
 import Card from 'components/card'
+import Avatar from 'components/avatar'
 
 import { colors, breakpoints } from 'constants/theme'
 
@@ -49,7 +51,11 @@ const gutter = [20, 20]
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Header />
+    <Header>
+      <Avatar />
+      <h1>Henning Ofstad</h1>
+      <p>Software Engineer</p>
+    </Header>
     <IntroText>
       {/* <h2>About me</h2> */}
       <p>
@@ -108,6 +114,7 @@ const IndexPage = () => (
         <Card image={IconPages}>
           <h2>Blog</h2>
           <p>My personal blog with engineering projects.. Work in progress.</p>
+          <Link to="/blog">Go to blog</Link>
         </Card>
       </PageRow>
     </Content>

@@ -64,12 +64,13 @@ const Wrapper = styled(Particles)`
   width: 100%;
   background-color: ${colors.headerBackground};
   z-index: 1;
-  height: ${sizes.headerHeight};
+  height: ${(props) => props.height};
 `
 
-const Component = ({ height }) => (
-  <Wrapper params={particlesConfig} height={height} />
-)
+const Component = ({ height }) => {
+  const headerHeight = height || sizes.headerHeight
+  return <Wrapper params={particlesConfig} height={headerHeight} />
+}
 
 Component.propTypes = {
   height: PropTypes.string.isRequired,
