@@ -9,6 +9,7 @@ tags:
   - table
   - diy
 ---
+
 \# Guide to building your own table
 
 1. Pick some good planks to work with.

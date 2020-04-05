@@ -5,7 +5,7 @@ import { Col, Card as AntCard } from 'antd'
 
 import { colors, sizes } from 'constants/theme'
 
-const StyledCard = styled(AntCard)`
+export const StyledCard = styled(AntCard)`
   border: none;
   .ant-card-body {
     border: thin solid ${colors.borderColor};
@@ -23,18 +23,16 @@ const StyledCard = styled(AntCard)`
   height: 100%;
 `
 
-const StyledCol = styled(Col)``
-
 const cardColSpan = { xs: 24, md: 8, lg: 8 }
 
 const Card = ({ children, image: Image }) => {
   return (
-    <StyledCol {...cardColSpan}>
+    <Col {...cardColSpan}>
       <StyledCard>
         {Image && <Image />}
         {children}
       </StyledCard>
-    </StyledCol>
+    </Col>
   )
 }
 

@@ -3,7 +3,7 @@
 
 body {
   text-align: center;
-  background-color: rgb(247, 245, 245);
+  background-color: rgb(248, 246, 246) !important;
 }
 
 h1,
@@ -24,15 +24,3 @@ h2 {
 p {
   font-size: 1.2em;
 }
-
-/* 
-body {
-  background-image: url('./floor.svg');
-  background-repeat: repeat;
-} */
-/* body div:nth-child(even):not(:first-child) {
-  background: rgb(246, 246, 246);
-} */
-/* body div:nth-child(odd):not(:first-child) {
-  background: red;
-} */

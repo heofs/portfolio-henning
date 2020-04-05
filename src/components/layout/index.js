@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   /* max-width: 55em; */
   /* padding: 0 1.0875rem 1.45rem; */
   padding: 0;
-  background-color: rgb(247, 245, 245);
+  background-color: rgb(248, 246, 246);
 `
 const Main = styled.main``
 

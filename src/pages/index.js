@@ -8,8 +8,9 @@ import SEO from 'components/seo'
 import Header from 'components/header'
 import Card from 'components/card'
 import Avatar from 'components/avatar'
+import CardContainer from 'components/card/card-container'
 
-import { colors, breakpoints } from 'constants/theme'
+import { colors } from 'constants/theme'
 
 import IconAuthor from 'images/author-logo.svg'
 import IconConsole from 'images/console.svg'
@@ -34,18 +35,6 @@ const IntroText = styled.div`
 
 const PageRow = styled(Row)``
 
-const Content = styled.div`
-  margin: 0 1em;
-
-  @media (min-width: ${breakpoints.md}) {
-    margin: auto;
-    max-width: 700px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1000px;
-  }
-`
-
 const gutter = [20, 20]
 
 const IndexPage = () => (
@@ -63,7 +52,7 @@ const IndexPage = () => (
         software services and other engineering projects.
       </p>
     </IntroText>
-    <Content>
+    <CardContainer>
       <Divider>Software Skills</Divider>
       <PageRow gutter={gutter}>
         <Card image={IconWeb}>
@@ -93,11 +82,19 @@ const IndexPage = () => (
             Web application for logging your body weight. Built with React and
             serverless functions.
           </p>
-          <a href="https://weight.ofstad.io/" target="_blank">
+          <a
+            href="https://weight.ofstad.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live
           </a>
           {' | '}
-          <a href="https://github.com/heofs/weight-boss" target="_blank">
+          <a
+            href="https://github.com/heofs/weight-boss"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
         </Card>
@@ -107,7 +104,11 @@ const IndexPage = () => (
             Web application used by Office for National Statistics in the UK for
             building questionnaires.
           </p>
-          <a href="https://github.com/ONSdigital/eq-author-app" target="_blank">
+          <a
+            href="https://github.com/ONSdigital/eq-author-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
         </Card>
@@ -117,7 +118,7 @@ const IndexPage = () => (
           <Link to="/blog">Go to blog</Link>
         </Card>
       </PageRow>
-    </Content>
+    </CardContainer>
   </Layout>
 )
 
