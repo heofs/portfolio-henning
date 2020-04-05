@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, navigate } from 'gatsby'
 import styled from 'styled-components'
 import { Row } from 'antd'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
 import Header from 'components/header'
-import Card from 'components/card/blog-card'
+import BlogCard from 'components/card/blog-card'
 import CardContainer from 'components/card/card-container'
 
 const PortfolioButton = styled.div`
@@ -25,21 +25,25 @@ const BlogPage = ({ data }) => {
         <h1>Blog</h1>
         <h2>Henning Ofstad</h2>
       </Header>
+
       <PortfolioButton>
         <Link to="/">Go to portfolio page</Link>
       </PortfolioButton>
-      <p>Page is still in progress. Welcome back later!</p>
+
       <CardContainer>
         <Row gutter={[20, 20]}>
           {posts.map((post) => {
             const frontmatter = post.node.frontmatter
-            // console.log(frontmatter.featuredimage)
             return (
-              <Card key={post.node.id}>
-                <h1>{frontmatter.title}</h1>
+              <BlogCard
+                key={post.node.id}
+                image={frontmatter.featuredimage}
+                onClick={() => navigate(post.node.fields.slug)}
+              >
+                <h2>{frontmatter.title}</h2>
                 <p>{frontmatter.description}</p>
-                <Link to={post.node.fields.slug}>Go to post</Link>
-              </Card>
+                <Link to={post.node.fields.slug}>Read post</Link>
+              </BlogCard>
             )
           })}
         </Row>

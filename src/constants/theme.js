@@ -32,4 +32,5 @@ export const breakpoints = {
 export const sizes = {
   cardImageSize: '4em',
   headerHeight: '20rem',
+  borderRadius: '10px',
 }
