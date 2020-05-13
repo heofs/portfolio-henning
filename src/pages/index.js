@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import { Row, Divider } from 'antd'
 
 import Layout from 'components/layout'
@@ -9,6 +8,7 @@ import Header from 'components/header'
 import Card from 'components/card'
 import Avatar from 'components/avatar'
 import CardContainer from 'components/card/card-container'
+import ProjectCard from 'components/card/project-card'
 
 import { colors } from 'constants/theme'
 
@@ -18,6 +18,9 @@ import IconCloud from 'images/cloud-console.svg'
 import IconWeb from 'images/front-end.svg'
 import IconWeight from 'images/weight.svg'
 import IconPages from 'images/blog-pages.svg'
+import IconChip from 'images/icon-chip.svg'
+import IconNetwork from 'images/icon-network.svg'
+import IconGreenhouse from 'images/icon-greenhouse.svg'
 
 const IntroText = styled.div`
   display: flex;
@@ -49,74 +52,128 @@ const IndexPage = () => (
       {/* <h2>About me</h2> */}
       <p>
         My name is Henning, I am a software engineer from Norway. I build
-        software services and other engineering projects.
+        services and other engineering projects using code.
       </p>
     </IntroText>
     <CardContainer>
-      <Divider>Software Skills</Divider>
+      <Divider id="skills">Software Skills</Divider>
       <PageRow gutter={gutter}>
         <Card image={IconWeb}>
           <h2>Frontend</h2>
           <p>
             Experience in building blazing fast commercial applications using
-            React.js.
+            React.js and GraphQL.
           </p>
         </Card>
         <Card image={IconConsole}>
           <h2>Backend</h2>
-          <p>Building backend services using Node.js and Python.</p>
+          <p>
+            Building backend services using Node.js and Python. Using both NoSQL
+            and SQL based database services.
+          </p>
         </Card>
         <Card image={IconCloud}>
           <h2>Cloud</h2>
           <p>
             Proficiency in using cloud providers like GCP and AWS to build
-            highly scalable and secure services.
+            scalable and secure services.
           </p>
         </Card>
       </PageRow>
-      <Divider>Projects and Contributions</Divider>
+      <Divider id="projects">Projects and Contributions</Divider>
       <PageRow gutter={gutter}>
-        <Card image={IconWeight}>
-          <h2>Weight Boss</h2>
-          <p>
-            Web application for logging your body weight. Built with React and
-            serverless functions.
-          </p>
-          <a
-            href="https://weight.ofstad.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live
-          </a>
-          {' | '}
-          <a
-            href="https://github.com/heofs/weight-boss"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </Card>
-        <Card image={IconAuthor}>
-          <h2>Author</h2>
-          <p>
-            Web application used by Office for National Statistics in the UK for
-            building questionnaires.
-          </p>
-          <a
-            href="https://github.com/ONSdigital/eq-author-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </Card>
-        <Card image={IconPages}>
-          <h2>Blog</h2>
-          <p>My personal blog with engineering projects.. Work in progress.</p>
-          <Link to="/blog">Go to blog</Link>
-        </Card>
+        <ProjectCard
+          title="Weight Boss"
+          image={IconWeight}
+          links={[
+            {
+              text: 'Live',
+              href: 'https://weight.ofstad.io/',
+            },
+            {
+              text: 'GitHub',
+              href: 'https://github.com/heofs/weight-boss',
+            },
+          ]}
+        >
+          Web application for logging your body weight. Built with React and
+          serverless functions.
+        </ProjectCard>
+
+        <ProjectCard
+          title="Author"
+          image={IconAuthor}
+          links={[
+            {
+              text: 'GitHub',
+              href: 'https://github.com/ONSdigital/eq-author-app',
+            },
+          ]}
+        >
+          Web application used by Office for National Statistics in the UK for
+          building electronic questionnaires.
+        </ProjectCard>
+
+        <ProjectCard
+          title="Portfolio"
+          image={IconPages}
+          links={[
+            {
+              text: 'Live',
+              href: 'https://henning.ofstad.io/',
+            },
+            {
+              text: 'GitHub',
+              href: 'https://github.com/heofs/portfolio-henning',
+            },
+          ]}
+        >
+          My personal website. Written using React.js and Gatsby.
+        </ProjectCard>
+
+        <ProjectCard
+          title="greenhouse-mqtt"
+          image={IconNetwork}
+          links={[
+            {
+              text: 'GitHub',
+              href: 'https://github.com/heofs/greenhouse-mqtt',
+            },
+          ]}
+        >
+          Data harvesting from sensors using Google Cloud IoT Core with Pub/Sub
+          and MQTT. Visualising data using BigQuery and Grafana.
+        </ProjectCard>
+
+        <ProjectCard
+          title="esp32-sensor"
+          image={IconChip}
+          links={[
+            {
+              text: 'GitHub',
+              href: 'https://github.com/heofs/esp32-sensor',
+            },
+          ]}
+        >
+          Using a ESP32 microcontroller with integrated WiFi to upload sensor
+          data to an API endpoint.
+        </ProjectCard>
+
+        <ProjectCard
+          title="Plantager"
+          // image={IconChip}
+          image={IconGreenhouse}
+          links={[
+            {
+              text: 'GitHub',
+              href: 'https://github.com/heofs/plantager-system',
+            },
+          ]}
+        >
+          My latest creation is a work in progress. When finished it will be a
+          complete greenhouse controller system with a web interface for
+          controlling and monitoring.
+        </ProjectCard>
       </PageRow>
     </CardContainer>
   </Layout>

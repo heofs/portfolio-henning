@@ -53,16 +53,23 @@ const Navbuttons = styled.div`
 
 const NavItemWrapper = styled.div`
   margin: 0 0.5em;
+  a {
+    padding: 0.5em;
+  }
   :hover {
     transform: scale(1.15);
   }
 `
 
-const NavItem = ({ children, to, ...otherProps }) => (
+const NavItem = ({ children, to, href, ...otherProps }) => (
   <NavItemWrapper>
-    <Link to={to} {...otherProps}>
-      {children}
-    </Link>
+    {to ? (
+      <Link to={to} {...otherProps}>
+        {children}
+      </Link>
+    ) : (
+      <a href={href}>{children}</a>
+    )}
   </NavItemWrapper>
 )
 
@@ -75,8 +82,10 @@ export const Navbar = () => {
           Ofstad
         </Brand>
         <Navbuttons>
-          <NavItem to={'/'}>Home</NavItem>
-          <NavItem to={'/blog'}>Blog</NavItem>
+          {/* <NavItem to={'/'}>Home</NavItem> */}
+          {/* <NavItem to={'/blog'}>Blog</NavItem> */}
+          <NavItem href={'#skills'}>Skills</NavItem>
+          <NavItem href={'#projects'}>Projects</NavItem>
         </Navbuttons>
       </Content>
     </Wrapper>
