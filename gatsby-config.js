@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#303030`,
         theme_color: `#303030`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-js.svg`, // This path is relative to the root of the site.
+        icon: `src/images/logo-cloud.svg`, // This path is relative to the root of the site.
       },
     },
     {
