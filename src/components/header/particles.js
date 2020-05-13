@@ -59,7 +59,7 @@ const particlesConfig = {
 }
 
 const Wrapper = styled(Particles)`
-  top: 0px;
+  top: ${sizes.navbarHeight};
   position: absolute;
   width: 100%;
   background-color: ${colors.headerBackground};

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from 'components/layout'
 import Header from 'components/header'
 import SEO from 'components/seo'
+import Bio from 'components/bio'
 
 const BlogContent = styled.div`
   max-width: 600px;
@@ -13,14 +14,19 @@ const BlogContent = styled.div`
   margin-top: 2em;
 `
 
+const TitleText = styled.h1`
+  margin: 0;
+`
+
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
       <SEO title="Blog" />
       <Header height={'8rem'}>
-        <h1>{post.frontmatter.title}</h1>
+        <TitleText>{post.frontmatter.title}</TitleText>
       </Header>
+      <Bio />
       <BlogContent>
         <Link to={'/blog'}>Back to blog</Link>
         <p>{post.frontmatter.date}</p>
@@ -61,7 +67,6 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
-
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

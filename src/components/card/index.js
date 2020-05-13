@@ -21,6 +21,10 @@ export const StyledCard = styled(AntCard)`
     box-shadow: 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
   }
   height: 100%;
+  transition: transform 0.1s;
+  :hover {
+    transform: scale(1.03);
+  }
 `
 
 const cardColSpan = { xs: 24, md: 8, lg: 8 }

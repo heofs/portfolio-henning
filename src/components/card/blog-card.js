@@ -33,11 +33,11 @@ const TextContainer = styled.div`
 
 const cardColSpan = { xs: 24, md: 8, lg: 8 }
 
-export const BlogCard = ({ children, image, onClick }) => {
+export const BlogCard = ({ children, image, alt, onClick }) => {
   return (
     <Col {...cardColSpan}>
       <Card>
-        <img src={image} onClick={onClick} />
+        <img src={image} onClick={onClick} alt={alt} onKeyDown={onClick} />
         <TextContainer>{children}</TextContainer>
       </Card>
     </Col>

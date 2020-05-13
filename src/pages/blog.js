@@ -9,10 +9,10 @@ import Header from 'components/header'
 import BlogCard from 'components/card/blog-card'
 import CardContainer from 'components/card/card-container'
 
-const PortfolioButton = styled.div`
-  padding: 1em 0;
-  display: flex;
-  justify-content: center;
+const StyledCardContainer = styled(CardContainer)`
+  &&& {
+    margin-top: 1em;
+  }
 `
 
 const BlogPage = ({ data }) => {
@@ -25,19 +25,15 @@ const BlogPage = ({ data }) => {
         <h1>Blog</h1>
         <h2>Henning Ofstad</h2>
       </Header>
-
-      <PortfolioButton>
-        <Link to="/">Go to portfolio page</Link>
-      </PortfolioButton>
-
-      <CardContainer>
+      <StyledCardContainer>
         <Row gutter={[20, 20]}>
           {posts.map((post) => {
             const frontmatter = post.node.frontmatter
             return (
               <BlogCard
                 key={post.node.id}
-                image={frontmatter.featuredimage}
+                image={frontmatter.featuredImage}
+                alt={frontmatter.featuredImageAlt}
                 onClick={() => navigate(post.node.fields.slug)}
               >
                 <h2>{frontmatter.title}</h2>
@@ -47,7 +43,7 @@ const BlogPage = ({ data }) => {
             )
           })}
         </Row>
-      </CardContainer>
+      </StyledCardContainer>
     </Layout>
   )
 }
@@ -64,7 +60,8 @@ export const query = graphql`
           frontmatter {
             title
             description
-            featuredimage
+            featuredImage
+            featuredImageAlt
           }
         }
       }

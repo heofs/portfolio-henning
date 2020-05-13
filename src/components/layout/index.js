@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import Navbar from './navbar'
 
 import 'styles/index.css'
 
@@ -23,6 +23,7 @@ const Footer = styled.footer`
 const Layout = ({ children }) => {
   return (
     <Wrapper>
+      <Navbar />
       <Main>{children}</Main>
       <Footer>© {new Date().getFullYear()}, Built by H. Ofstad</Footer>
     </Wrapper>

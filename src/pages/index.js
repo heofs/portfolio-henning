@@ -74,7 +74,7 @@ const IndexPage = () => (
           </p>
         </Card>
       </PageRow>
-      <Divider>Contributions</Divider>
+      <Divider>Projects and Contributions</Divider>
       <PageRow gutter={gutter}>
         <Card image={IconWeight}>
           <h2>Weight Boss</h2>
